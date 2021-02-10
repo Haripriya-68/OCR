@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Extracting Text from Image & PDF</title>
+    <link rel="stylesheet" href=" " crossorigin="">
+</head>
+
+<body>
+<div class='text-center'><br><br>
+    <h1 style="color: green"> Optical Character Recognition(OCR) </h1>
+    <form method=POST enctype='multipart/form-data'>
+
+        <label for="dropdown"><h3 style="color: red">Choose Language</h3></label>
+        <select name="dropdown" id="dropdown">
+
+	        <option value="eng"><h4 style="color: blue">English </h4> </option>
+            <option value="kan"><h4 style="color: blue">Kannada </h4> </option>
+
+        </select>
+
+        <label for="pdf_img"><h3 style="color: red">Choose PDF or Image</h3></label>
+         <select name="pdf_img" id="pdf_img">
+
+	     <option value="pdf_to_img">PDF </option>
+	     <option value="img_txt">Image</option>
+
+     </select><br><br>
+
+        <input type='file' class='btn btn-green' name='photo'><br><br>
+        <input type='Submit' onclick="myFunction" class='btn btn-blue' name='img-name'>
+
+      <script>
+      function myFunction()
+      {
+      alert("Your request is being processed...\nPlease wait for its completion.");
+      }
+</script>
+    </form>
+</div>
+</body>
+<style>
+    input{
+    margin: auto;
+    width: auto;
+    <input id='input' type='text' class='form-control' placeholder='enter image name...' name='img-name'><br>
+    }
+</style>
+</html>

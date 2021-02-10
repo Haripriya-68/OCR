@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test App</title>
+</head>
+<body>
+{% if (img_value==True) %}
+ <div>
+
+    <p> {{ foobar }}</p>
+</div>
+{% else %}
+    {% for each in foobar %}
+ <p> </p>
+<div>
+
+    <p> {{ each }}</p>
+</div>
+
+{% endfor %}
+{% endif %}
+
+
+
+</body>
+</html>
